@@ -1,0 +1,76 @@
+<!DOCTYPE html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=decision-width,height=device-height, initial-scale=1.0">
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./decisiontree.css">
+        <link rel="icon" href="rome-icon.png" type="image/icon type">
+        <script src="./clothing-decisiontree.js"></script>
+        <title>Clothing Decision Tree</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Numans&display=swap');
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <header>
+                <h1 id="title" style="text-align:center">Clothes Decision Questionnaire</h1>
+            </header>
+            <p>Questionnare to help YOU decide on clothes to get or keep without the decision paralysis and ensure sensory safety!</p>
+
+            <form onsubmit="processSubmit()" id="survery-form">
+                <fieldset>
+                    <legend>Color of item?</legend>
+                    <select id="colorDropdown" type="dropdown" required>
+                        <option value="select">(select one)</option>
+                        <option value="Red">Red</option>
+                        <option value="Orange">Orange</option>
+                        <option value="Yellow">Yellow</option>
+                        <option value="Green">Green</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Purple">Purple</option>
+                        <option value="White">White</option>
+                        <option value="Gray">Gray</option>
+                        <option value="Beige">Beige</option>
+                        <option value="Brown">Brown</option>
+                        <option value="Black">Black</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Texture of item?</legend>
+                    <select id="textureDropdown" type="dropdown" required>
+                        <option value="select">(select one)</option>
+                        <option value="soft">Soft</option>
+                        <option value="fuzzy">Fuzzy</option>
+                        <option value="structured">Structured</option>
+                        <option value="stretchy">Stretchy</option>
+                        <option value="rough">Rough</option>
+                        <option value="itchy">Itchy</option>
+                    </select>
+                </fieldset>
+                <fieldset required  >
+                    <legend>Sound of item?</legend>
+                    <input id="soundInput" type="radio" name="soundInput" value="noSound"> No Sound </br>
+                    <input id="soundInput" type="radio" name="soundInput" value="Crinkly"> Crinkly </br>
+                    <input id="soundInput" type="radio" name="soundInput" value="Crunchy"> Crunchy </br>
+                </fieldset>
+                <fieldset required>
+                    <legend>Is the material flexible around the knees, arms and waist?</legend>
+                    <input type="radio" id="mobilityInput" name="mobilityInput" value="Yes"> Yes </br>
+                    <input type="radio" id="mobilityInput" name="mobilityInput" value="No"> No </br>
+    
+                </fieldset>
+                <fieldset>
+                    <legend>Size of item?</legend>
+                    <input type="radio" id="sizeInput" name="sizeInput" value="xs"> Extra small </br>
+                    <input type="radio" id="sizeInput" name="sizeInput" value="small"> Small </br>
+                    <input type="radio" id="sizeInput" name="sizeInput" value="medium"> Medium </br>
+                    <input type="radio" id="sizeInput" name="sizeInput" value="large"> Large </br>
+                    <input type="radio" id="sizeInput" name="sizeInput" value="xLup"> Extra large and up</br>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+        </div> 
+    </body>
+</html>
