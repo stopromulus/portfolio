@@ -69,13 +69,19 @@
                     <input type="radio" id="mobilityInput" name="mobilityInput" value="No"> No </br>
     
                 </fieldset>
-                <fieldset>
+                <fieldset required>
                     <legend>Size of item?</legend>
                     <input type="radio" id="sizeInput" name="sizeInput" value="xs"> Extra small </br>
                     <input type="radio" id="sizeInput" name="sizeInput" value="small"> Small </br>
                     <input type="radio" id="sizeInput" name="sizeInput" value="medium"> Medium </br>
                     <input type="radio" id="sizeInput" name="sizeInput" value="large"> Large </br>
                     <input type="radio" id="sizeInput" name="sizeInput" value="xLup"> Extra large and up</br>
+                </fieldset>
+                <fieldset required>
+                    <legend>Does item have pocket?</legend>
+                    <input type="radio" id="pocketInput" name="pocketInput" value="yes"> Yes </br>
+                    <input type="radio" id="pocketInput" name="pocketInput" value="no"> No </br>
+                    <input type="radio" id="pocketInput" name="pocketInput" value="notApplicable"> Not Applicable </br>
                 </fieldset>
                 <input type="submit" value="Submit">
             </form>

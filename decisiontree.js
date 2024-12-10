@@ -6,6 +6,7 @@ function processSubmit() {
     const sound = decisionForm.elements['soundInput'].value;
     const mobility = decisionForm.elements['mobilityInput'].value;
     const size = decisionForm.elements['sizeInput'].value;
+    const pocket = decisionForm.elements['pocketInput'].value;
 
     // Responses about clothing decision
     let posResponse = "Past Rome approved!";
@@ -17,7 +18,11 @@ function processSubmit() {
             if(["noSound"].includes(sound)) {
                 if(["Yes"].includes(mobility)) {
                     if(["medium", "large"].includes(size)) {
-                        alert(posResponse);
+                        if(["yes", "notApplicable"].includes(pocket)) {
+                            alert(posResponse)
+                        } else {
+                            alert(negResponse);
+                        }
                     } else {
                         alert(negResponse);
                     }
