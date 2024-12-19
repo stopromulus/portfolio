@@ -106,7 +106,7 @@ html, body {
 }
 
 .gallery {
-	display: grid;
+	display: inline grid;
 	grid-gap: 10px;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-auto-rows: 200px;
@@ -128,5 +128,11 @@ html, body {
     .gallery {
         flex: 100%;
         width: 100%;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .big, .wide, .tall {
+        grid-column: auto;
+        grid-row: auto;
     }
 }
