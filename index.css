@@ -78,16 +78,16 @@ body {
 }
 
 .row {
-    display: flex;
+    display: in-line flex;
 }
 
-.column-left {
+.left {
     flex: left;
     width: 30%;
     padding: 25px;
 }
   
-.column-right {
+.right {
     flex: left;
     width: 70%;
     padding: 45px;
@@ -117,3 +117,14 @@ body {
     border: hidden 1px black; 
     background-color:#003300;
 }
+
+  @media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        width: 100%;
+    }
+    .img {
+        width: 50%;
+    }
+  }
+

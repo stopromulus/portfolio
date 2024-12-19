@@ -124,16 +124,9 @@ html, body {
 	grid-row: span 2;
 }
 
-@media screen and (max-width: 900px) {
-    .column {
-        flex: 50%;
-        width: 50%;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    .column {
+@media screen and (max-width: 600px) {
+    .gallery {
         flex: 100%;
         width: 100%;
     }
-  }
+}
