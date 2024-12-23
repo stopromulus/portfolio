@@ -78,8 +78,9 @@ body {
 }
 
 .row {
-    display: in-line flex;
+    display: inline flex;
 }
+
 
 .left {
     flex: left;
@@ -118,13 +119,14 @@ body {
     background-color:#003300;
 }
 
-  @media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
+@media only screen and (max-width: 500px) {
+    .left, .right {
         width: 100%;
     }
-    .img {
-        width: 50%;
-    }
-  }
 
+        
+    .row {
+        display: inherit;
+    }
+
+}

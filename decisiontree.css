@@ -1,6 +1,5 @@
 @media screen and (max-width: 600px) {
     .form {
-        flex: 100%;
         width: 100%;
     }
 }
@@ -84,9 +83,9 @@ body {
     background-color: #1a1a1a;
 }
 .form {
-    width: 550px;
+    width: 80%;
+    max-width: 550px;
     padding: 15px;
-    display: block;
     margin: 10px auto 10px auto;
     background-color: #0d0d0d;
     color: white;
@@ -127,4 +126,13 @@ fieldset {
     max-width: 600px; 
     margin: 0 auto; 
     padding: 20px; 
+    display: inline flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
