@@ -1,5 +1,7 @@
-* {
-    box-sizing: border-box;
+@media screen and (max-width: 600px) {
+    .form {
+        width: 100%;
+    }
 }
 
 @font-face {
@@ -12,7 +14,7 @@
     font-weight: 400;
     font-style: normal;
 }
-  
+
 .header { 
     width: 100%;
     height: 100px;   
@@ -77,66 +79,60 @@ body {
     color: #ffffff;
 }
 
-html, body {
-    margin: 0 auto;
-}
-.gallery > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+    background-color: #1a1a1a;
 }
 
-.gallery img {
+.spendingForm {
+    width: 80%;
+    max-width: 550px;
+    padding: 15px;
+    margin: 10px auto 10px auto;
+    background-color: #0d0d0d;
+    color: white;
+    font-family: Numans;
+    border: 5px solid gray;
+    border-radius: 5px;
+    text-wrap: wrap;
+}
+
+select {
     width: 100%;
-    height: auto;
-    vertical-align: middle;
-    display: inline-block;
+    background-color: #262626;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
 }
 
-.gallery::after {
+ input[type="submit"] {
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+fieldset {
+    margin: 10px;
+    background-color: #0d0d0d; 
+}
+
+.form-container { 
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    display: inline flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row:after {
     content: "";
-    width: 350px;
-}
-
-.gallery > div > img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 5px;
-}
-
-.gallery {
-	display: inline grid;
-	grid-gap: 10px;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	grid-auto-rows: 200px;
-	grid-auto-flow: dense;
-    padding: 5px 100px;
-}
-.gallery .wide {
-	grid-column: span 2;
-}
-.gallery .tall {
-	grid-row: span 2;
-}
-.gallery .big {
-	grid-column: span 2;
-	grid-row: span 2;
-}
-
-.description {
-    padding: 20px;
-}
-
-@media screen and (max-width: 600px) {
-    .gallery {
-        flex: 100%;
-        width: 100%;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
-    }
-    .big, .wide, .tall {
-        grid-column: auto;
-        grid-row: auto;
-    }
-}
+    display: table;
+    clear: both;
+  }

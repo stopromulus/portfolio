@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=decision-width,height=device-height, initial-scale=1.0">
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./spendingform.css">
+        <link rel="icon" href="Portfolio-logo (2).png" type="image/icon type">
+        <script src="./spendingform.js"></script>
+        <title>ADHD Spending Decision Form</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Numans&display=swap');
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <img src="Portfolio-logo (2).png" alt="Portfolio Logo" style="margin-left: auto; margin-right: auto">
+        </div>
+        <div class="topnav">
+            <ul>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./photogallery.html">Photography</a></li>
+                <li><a href="./decisiontree.html">Clothing Decision Form</a></li>
+                <li><a href="./spendingform.html">ADHD Spending Form</a></li>
+            </ul>
+        </div>
+        <div class="spendingForm">
+            <h1 id="title" style="text-align:center">ADHD Spending Decision Form</h1>
+            <p>This form is designed to help you with spending decisions when having ADHD and reduces impulsive spending!</p>
+            <form onsubmit="processSubmit()" id="survery-form">
+                <fieldset required>
+                    <legend>Is this item within your budget?</legend>
+                    <input type="radio" id="budgetInput" name="budgetInput" value="yes"> Yes </br>
+                    <input type="radio" id="budgetInput" name="budgetInput" value="no"> No
+                </fieldset>
+                <fieldset required>
+                    <legend>Can you borrow this item from a friend or somewhere else?</legend>
+                    <input type="radio" id="borrowInput" name="borrowInput" value="yes"> Yes </br>
+                    <input type="radio" id="borrowInput" name="borrowInput" value="no"> No
+                </fieldset>
+                <fieldset required>
+                    <legend>Is it a high quality item with a reasonable price?</legend>
+                    <input type="radio" id="qualityInput" name="qualityInput" value="yes"> Yes </br>
+                    <input type="radio" id="qualityInput" name="qualityInput" value="no"> No
+                </fieldset>
+                <fieldset>
+                    <legend>How long have you been thinking about/wanting this item?</legend>
+                    <select id="timeDropdown" type="dropdown" required>
+                        <option value="select">(select one)</option>
+                        <option value="12months">9-12+ Months</option>
+                        <option value="6to9months">6-9 Months</option>
+                        <option value="3to6months">3-6 Months</option>
+                        <option value="1to3months">1-3 Months</option>
+                        <option value="weeks"In>Less than 1 Month</option>
+                    </select>
+                </fieldset>
+                <fieldset required>
+                    <legend>Does buying it support my priorities?</legend>
+                    <input type="radio" id="prioritiesInput" name="prioritiesInput" value="yes"> Yes </br>
+                    <input type="radio" id="prioritiesInput" name="prioritiesInput" value="no"> No
+                </fieldset>
+                <fieldset required>
+                    <legend>Am I only interested in it because it's on sale?</legend>
+                    <input type="radio" id="saleInput" name="saleInput" value="yes"> Yes </br>
+                    <input type="radio" id="saleInput" name="saleInput" value="no"> No
+                </fieldset>
+                <fieldset required>
+                    <legend>Will this contribute to my financial stress?</legend>
+                    <input type="radio" id="stressInput" name="stressInput" value="yes"> Yes </br>
+                    <input type="radio" id="stressInput" name="stressInput" value="no"> No
+                </fieldset>
+                <fieldset required>
+                    <legend>What is my current state of mind?</legend>
+                    <input type="radio" id="stateInput" name="stateInput" value="yes"> Yes </br>
+                    <input type="radio" id="stateInput" name="stateInput" value="no"> No
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

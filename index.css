@@ -115,7 +115,8 @@ body {
 }
 
 .row > div > .information {
-    border: hidden 1px black; 
+    border: 1px black;
+    border-radius: 15px; 
     background-color:#003300;
 }
 
