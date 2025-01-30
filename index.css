@@ -85,13 +85,13 @@ body {
 .left {
     flex: left;
     width: 30%;
-    padding: 25px;
+    padding: 50px;
 }
   
 .right {
     flex: left;
     width: 70%;
-    padding: 45px;
+    padding: 50px;
     background-color: #1a1a1a;
 }  
 

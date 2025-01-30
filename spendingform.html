@@ -28,7 +28,7 @@
         <div class="spendingForm">
             <h1 id="title" style="text-align:center">ADHD Spending Decision Form</h1>
             <p>This form is designed to help you with spending decisions when having ADHD and reduces impulsive spending!</p>
-            <form onsubmit="processSubmit()" id="survery-form">
+            <form onsubmit="alert(processSubmit())" id="spending-form">
                 <fieldset required>
                     <legend>Is this item within your budget?</legend>
                     <input type="radio" id="budgetInput" name="budgetInput" value="yes"> Yes </br>
@@ -72,8 +72,8 @@
                 </fieldset>
                 <fieldset required>
                     <legend>What is my current state of mind?</legend>
-                    <input type="radio" id="stateInput" name="stateInput" value="yes"> Yes </br>
-                    <input type="radio" id="stateInput" name="stateInput" value="no"> No
+                    <input type="radio" id="stateInput" name="stateInput" value="calm"> Calm/Neutral </br>
+                    <input type="radio" id="stateInput" name="stateInput" value="altered"> Altered by internal/external force
                 </fieldset>
                 <input type="submit" value="Submit">
             </form>
