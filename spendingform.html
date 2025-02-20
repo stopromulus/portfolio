@@ -11,6 +11,17 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Numans&display=swap');
         </style>
+        <script>
+            function toggleMobileNav() {
+                let popup = document.getElementById('mobile-nav-popup')
+                console.log(getComputedStyle(popup).display)
+                if (getComputedStyle(popup).display == 'flex') {
+                    popup.style.display = 'none';
+                } else {
+                    popup.style.display = 'flex';
+                }
+            }
+        </script>
     </head>
 
     <body>
@@ -25,6 +36,16 @@
                 <li><a href="./spendingform.html">ADHD Spending Form</a></li>
             </ul>
         </div>
+        <div class="mobile-topnav">
+            <button onclick="toggleMobileNav()"><i class="fa fa-bars xl"></i></button>
+            <ul id="mobile-nav-popup">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./photogallery.html">Photography</a></li>
+                <li><a href="./decisiontree.html">Clothing Decision Form</a></li>
+                <li><a href="./spendingform.html">ADHD Spending Form</a></li>
+            </ul>
+        </div>
+        
         <div class="spendingForm">
             <h1 id="title" style="text-align:center">ADHD Spending </br>Decision Form</h1>
             <p>This form is designed to help you with spending decisions when having ADHD and reduce impulsive spending!</p>
